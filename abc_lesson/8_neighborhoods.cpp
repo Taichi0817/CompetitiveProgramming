@@ -3,8 +3,8 @@
 #include <random>
 
 // マス目の縦と横のサイズ
-const int H = 10;
-const int W = 7;
+const int H = 3;
+const int W = 3;
 
 // 任意のマスの8近傍の和を計算する関数
 int calculateSumOfNeighbours(const std::vector<std::vector<int>>& grid, int row, int col) {
@@ -51,7 +51,7 @@ int main() {
     std::cin >> col;
 
     // 8近傍の和を計算
-    int sum = calculateSumOfNeighbours(grid, row, col);
+    int sum = calculateSumOfNeighbours(grid, row-1, col-1);
     std::cout << "8近傍の和: " << sum << std::endl;
 
     return 0;
