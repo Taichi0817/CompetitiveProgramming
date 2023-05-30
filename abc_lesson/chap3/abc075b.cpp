@@ -7,9 +7,9 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 
 int main(void) {
-    int H;
-    int W;
-    string B[101];
+    int H; // 高さ
+    int W; // 幅
+    string B[101]; 
     cin >> H >> W;
     rep(y, 0, H) cin >> B[y];
 
