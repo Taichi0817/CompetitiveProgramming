@@ -9,11 +9,11 @@ int main(void) {
 
     cin >> N;
     
-    rep(i, 0, 10) rep(j, 0, 10)
-        if (i*j==N) {
+    rep(i, 0, 30) rep(j, 0, 30)
+        if (i*7 + j*4==N) {
             ans = "Yes";
             break;
-        }
+        } else if (i*4 + j*7 > N) continue;
     
     cout << ans << endl;
 }
